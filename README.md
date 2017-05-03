@@ -16,7 +16,9 @@ After installing the required tools, you will need to ensure that your computer 
 ## Part I: Building a box with Packer
 
 From the packer-templates directory on your local machine:
-
+* SET UP application-server.json
+    - "PACKER_BOX_NAME": "ubuntu-14.04.5-server-amd64"
+    - "iso_checksum": "dde07d37647a1d2d9247e33f14e91acb10445a97578384896b4e1d985f754cc1"
 * Run `packer build -only=virtualbox-iso application-server.json`. You may see various timeouts and errors, as shown below. If you do, retry the command until the ISO download succeeds:
 
 ```
